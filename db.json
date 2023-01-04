@@ -20,6 +20,13 @@
       "birth": "2023-01-12",
       "password": "123456789",
       "id": 3
+    },
+    {
+      "name": "Hasan",
+      "email": "hasan@gmail.com",
+      "birth": "2023-01-05",
+      "password": "123456789",
+      "id": 4
     }
   ],
   "notes": []
