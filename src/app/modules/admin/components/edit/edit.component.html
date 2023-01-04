@@ -11,14 +11,14 @@
     </select>
   </div>
   <div>
-    <label class="note-label">Add notes</label>
+    <label class="note-label">Note</label>
     <input class="note-input" formControlName="note" />
   </div>
   <div
     *ngIf="noteForm.value.type === 'Todo' || noteForm.value.type === 'Reminder'"
   >
     <div>
-      <label class="note-label">Add Date</label>
+      <label class="note-label">Date</label>
       <input class="note-input" formControlName="date" type="date" />
     </div>
   </div>
@@ -26,10 +26,10 @@
     *ngIf="noteForm.value.type === 'Todo' || noteForm.value.type === 'Reminder'"
   >
     <div>
-      <label class="note-label">Add Time</label>
+      <label class="note-label">Time</label>
       <input class="note-input" formControlName="time" type="time" />
     </div>
   </div>
 
-  <button class="main-nav-link nav-cta">Add note</button>
+  <button class="main-nav-link nav-cta">Update</button>
 </form>

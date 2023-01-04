@@ -1,44 +1,26 @@
 {
   "users": [
     {
-      "name": "Rumman",
-      "email": "rumman@gmail.com",
-      "birth": "2023-01-10",
+      "name": "Nafiz",
+      "email": "nafiz@gmail.com",
+      "birth": "2023-01-26",
       "password": "123456789",
       "id": 1
     },
     {
-      "name": "Nafiz",
-      "email": "nafiz@gmail.com",
+      "name": "ruman",
+      "email": "nafiz1@gmail.com",
       "birth": "2023-01-05",
       "password": "123456789",
       "id": 2
+    },
+    {
+      "name": "Tisha",
+      "email": "tisha@gmail.com",
+      "birth": "2023-01-12",
+      "password": "123456789",
+      "id": 3
     }
   ],
-  "notes": [
-    {
-      "type": "",
-      "note": "Doctor ",
-      "user": 1,
-      "id": 1
-    },
-    {
-      "type": "",
-      "note": "kjhgfdsdfhjk",
-      "user": 1,
-      "id": 2
-    },
-    {
-      "type": "",
-      "note": "dfghjkkjhgfdfghjkl",
-      "user": 2,
-      "id": 3
-    },
-    {
-      "type": "",
-      "note": ";lkjhgfdfghjkl;",
-      "user": 1,
-      "id": 4
-    }
-  ]
+  "notes": []
 }

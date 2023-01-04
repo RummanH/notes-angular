@@ -26,12 +26,22 @@ export class NoteService {
     });
   }
 
+  deleteNote(note: any) {
+    return this.http.delete<any>(`${this.apiURL}/${note.id}`);
+  }
+
   addNote(note: any) {
     this.http.post<any>(this.apiURL, note).subscribe(() => {
-      this.router.navigate(['admin/notes-all']);
+      this.router.navigate(['admin/home']);
     });
   }
   getAllNotes() {
     return this.http.get<any>(this.apiURL);
+  }
+  getNote(id: any) {
+    return this.http.get<any>(`${this.apiURL}/${id}`);
+  }
+  editNote(id: any, note: any) {
+    return this.http.patch<any>(`${this.apiURL}/${id}`, note);
   }
 }

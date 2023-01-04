@@ -1,7 +1,21 @@
 <ul class="note-list">
-  <li *ngFor="let note of notes" class="note-card">
-    <span class="name">Name: {{ user.name }}</span>
+  <li *ngFor="let note of notes" class="card">
+    <p class="card-name">{{ note.note }}</p>
     <br />
-    <span class="note">{{ note.note }}</span>
+    <p class="margin-top-lg">
+      <span>Type : </span> <b> {{ note.type }}</b>
+    </p>
+    <p class="card-text">
+      <b>{{ user.name }}</b>
+    </p>
+    <p class="card-text">{{ note.date }}</p>
+    <p class="card-text">{{ note.time }}</p>
+    <a class="delete-btn" [routerLink]="['../edit', note.id]"> edit</a>
+    <button class="delete-btn" (click)="deleteNote(note)">Delete</button>
   </li>
 </ul>
+
+<!--
+      [routerLink]="['../edit']"
+      [queryParams]="{ id: note.id }"
+-->

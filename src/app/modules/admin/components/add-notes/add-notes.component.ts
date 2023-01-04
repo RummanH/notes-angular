@@ -10,7 +10,9 @@ import { NoteService } from 'src/app/services/note.service';
   styleUrls: ['./add-notes.component.css'],
 })
 export class AddNotesComponent {
+  typeValues: string[] = ['regular', 'reminder', 'todo', 'bookmark'];
   user: any = {};
+  noteType: string = '';
   constructor(
     private note: NoteService,
     private router: Router,
@@ -19,6 +21,8 @@ export class AddNotesComponent {
   noteForm = new FormGroup({
     type: new FormControl(''),
     note: new FormControl(''),
+    date: new FormControl(''),
+    time: new FormControl(''),
   });
   ngOnInit(): void {
     this.user = this.authService.getCurrentUser();
@@ -28,7 +32,6 @@ export class AddNotesComponent {
     if (!this.noteForm.value.note) {
       return alert('please add a note!');
     }
-
     this.note.addNote({ ...this.noteForm.value, user: this.user.id });
     this.noteForm.reset();
   }

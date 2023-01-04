@@ -9,12 +9,18 @@ import { NoteService } from 'src/app/services/note.service';
   styleUrls: ['./notes.component.css'],
 })
 export class NotesComponent {
+  notes: any = [];
   constructor(
     private note: NoteService,
     private router: Router,
     private authService: AuthService
   ) {}
-  notes: any = [];
+  deleteNote(note: any) {
+    this.note.deleteNote(note).subscribe(() => {
+      console.log(note);
+      this.notes = this.notes.filter((n: any) => n.id !== note.id);
+    });
+  }
   user: any = {};
   ngOnInit(): void {
     this.user = this.authService.getCurrentUser();
