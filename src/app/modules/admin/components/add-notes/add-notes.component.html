@@ -1,0 +1,18 @@
+<form class="container" [formGroup]="noteForm" (ngSubmit)="onSubmit()">
+  <h2>Take your note here</h2>
+  <div class="margin-bottom-sm">
+    <label class="note-label">Note type</label>
+    <select class="note-input">
+      <option ngValue="">Please choose one option</option>
+      <option ngValue="regular">Regular</option>
+      <option>Reminder</option>
+      <option>Todo</option>
+      <option>Bookmark</option>
+    </select>
+  </div>
+  <div>
+    <label class="note-label">Add notes</label>
+    <input class="note-input" formControlName="note" />
+  </div>
+  <button class="main-nav-link nav-cta">Add note</button>
+</form>

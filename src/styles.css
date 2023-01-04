@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato' sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.heading-secondary {
+  text-align: center;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted red;
+  outline-offset: 8px; */
+  /* box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.525); */
+  box-shadow: 0 0 0 0.1rem rgba(173, 165, 158, 0.525);
+}
+
+.redirect-btn {
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.signin-form {
+  margin-top: 7rem;
+}

@@ -1,0 +1,39 @@
+.input {
+  border: none;
+  border-bottom: 2px solid rgb(168, 164, 164);
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.3rem;
+  margin-bottom: 1.7rem;
+}
+.input::placeholder {
+  font-size: 1.3rem;
+  color: #999;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+}
+
+.p-text {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #555;
+}
+
+.btn {
+  font-size: 1.3rem;
+  display: block;
+  background-color: rgb(31, 30, 30);
+  color: #fff;
+  padding: 0.5rem 3rem;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}

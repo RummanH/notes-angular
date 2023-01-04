@@ -1,0 +1,51 @@
+<div class="container">
+  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="signin-form">
+    <h2 class="heading-secondary">Sign up</h2>
+    <div>
+      <input
+        formControlName="name"
+        class="input"
+        name="name"
+        id="name"
+        type="text"
+        placeholder="Enter your name"
+      />
+    </div>
+    <div>
+      <input
+        formControlName="email"
+        class="input"
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+      />
+    </div>
+    <div>
+      <input
+        formControlName="birth"
+        class="input"
+        name="birth"
+        id="birth"
+        type="date"
+        placeholder=""
+      />
+    </div>
+    <div>
+      <input
+        formControlName="password"
+        class="input"
+        name="password"
+        id="password"
+        type="password"
+        placeholder="Enter password "
+      />
+    </div>
+    <p class="p-text">
+      Already a user? <a class="rediect-btn" routerLink="../login">Login</a>
+    </p>
+    <div class="btn-container">
+      <button type="submit" class="btn">Sign up</button>
+    </div>
+  </form>
+</div>

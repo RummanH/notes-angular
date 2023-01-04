@@ -1,0 +1,43 @@
+.note-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.note-card {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: rgb(155, 149, 149);
+  margin-right: 10px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  background-color: #ccbaaa;
+  text-align: center;
+}
+.name {
+  font-size: 1.3rem;
+}
+.note {
+  font-size: 1.3rem;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #f8d8bd;
+  padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+  background-color: #fae5d3;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}

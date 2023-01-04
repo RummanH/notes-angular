@@ -1,0 +1,22 @@
+<header class="header">
+  <nav class="main-nav">
+    <ul class="main-nav-list">
+      <li class="">
+        <a class="main-nav-link" href="#" routerLink="../admin/notes-all"
+          >Notes</a
+        >
+      </li>
+      <li class="">
+        <a class="main-nav-link" href="#" (click)="logoutHandler()">Logout</a>
+      </li>
+      <li class="">
+        <span class="main-nav-link current-user">{{ user.name }}</span>
+      </li>
+      <li class="">
+        <a class="main-nav-link nav-cta" href="#" routerLink="../admin/notes"
+          >Add note</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>

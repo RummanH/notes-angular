@@ -1,0 +1,1 @@
+ng g m modules/admin --routing
